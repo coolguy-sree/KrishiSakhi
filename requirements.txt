@@ -18,3 +18,4 @@ torchaudio
 # sentencepiece  # Commented out for Streamlit Cloud deployment (requires cmake/pkg-config)
 scikit-learn
 openmeteo-requests
+requests-cache
