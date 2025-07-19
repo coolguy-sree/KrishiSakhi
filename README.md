@@ -94,7 +94,7 @@ The app will be available at http://localhost:8501 (or another port if specified
 - The app is designed for educational and research use; not for medical or financial advice.
 
 ## 🙏 Credits
-- **Developers:** [Your Name/Team]
+- **Developers:** [SURYA SAROJ SISTLA ]
 - **Datasets:**
   - Crop Recommendation Dataset
   - PlantVillage Dataset
@@ -103,7 +103,7 @@ The app will be available at http://localhost:8501 (or another port if specified
 - **Libraries:** Streamlit, Google Generative AI, Folium, Matplotlib, Vosk, etc.
 
 ## 📧 Contact
-For questions, suggestions, or contributions, please open an issue or contact the maintainer.
+For questions, suggestions, or contributions, please open an issue or contact sistlasree24@gmail.com
 
 ---
 
