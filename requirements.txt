@@ -19,3 +19,4 @@ torchaudio
 scikit-learn
 openmeteo-requests
 requests-cache
+retry_requests
