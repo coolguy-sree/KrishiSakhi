@@ -1,5 +1,5 @@
 streamlit-webrtc
-pyaudio
+# pyaudio  # Commented out for Streamlit Cloud deployment (requires portaudio.h)
 translate
 python-dotenv
 # For segmentation (if using torch-based models)
@@ -15,4 +15,4 @@ boto3
 vosk
 transformers
 torchaudio
-sentencepiece
+# sentencepiece  # Commented out for Streamlit Cloud deployment (requires cmake/pkg-config)
