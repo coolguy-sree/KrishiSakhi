@@ -17,4 +17,4 @@ transformers
 torchaudio
 # sentencepiece  # Commented out for Streamlit Cloud deployment (requires cmake/pkg-config)
 scikit-learn
-openmeteo_requests4
+openmeteo-requests
