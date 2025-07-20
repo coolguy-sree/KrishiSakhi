@@ -867,22 +867,22 @@ def sidebar_navigation():
     st.session_state['lang'] = {v: k for k, v in lang_display.items()}[selected_lang]
     # --- Geolocation display and override ---
     st.sidebar.markdown('---')
-    # Try browser geolocation first
-    geo = streamlit_geolocation.streamlit_geolocation()
-    if geo and geo.get('latitude') and geo.get('longitude'):
-        loc = {
-            'latitude': geo['latitude'],
-            'longitude': geo['longitude'],
-            'city': '',
-            'region': '',
-            'country': ''
-        }
-        st.sidebar.write('**Detected Location (Browser):**')
-        st.sidebar.write(f"Lat: {geo['latitude']}, Lon: {geo['longitude']}")
-    else:
-        loc = get_geolocation()
-        st.sidebar.write('**Detected Location (IP):**')
-        st.sidebar.write(f"{loc.get('city', '')}, {loc.get('region', '')}, {loc.get('country', '')}")
+    with st.sidebar:
+        geo = streamlit_geolocation.streamlit_geolocation()
+        if geo and geo.get('latitude') and geo.get('longitude'):
+            loc = {
+                'latitude': geo['latitude'],
+                'longitude': geo['longitude'],
+                'city': '',
+                'region': '',
+                'country': ''
+            }
+            st.markdown('<div style="display:flex;align-items:center;margin-bottom:0.5em;"><span style="font-size:1.3em;margin-right:0.4em;">📍</span><span style="font-weight:bold;color:#388e3c;">Detected Location (Browser)</span></div>', unsafe_allow_html=True)
+            st.markdown(f'<span style="color:#333;font-size:1.1em;">Lat: <b>{geo["latitude"]:.4f}</b>, Lon: <b>{geo["longitude"]:.4f}</b></span>', unsafe_allow_html=True)
+        else:
+            loc = get_geolocation()
+            st.markdown('<div style="display:flex;align-items:center;margin-bottom:0.5em;"><span style="font-size:1.3em;margin-right:0.4em;">📍</span><span style="font-weight:bold;color:#388e3c;">Detected Location (IP)</span></div>', unsafe_allow_html=True)
+            st.markdown(f'<span style="color:#333;font-size:1.1em;">{loc.get("city", "")}, {loc.get("region", "")}, {loc.get("country", "")}</span>', unsafe_allow_html=True)
     if st.sidebar.checkbox('Override location'):
         city = st.sidebar.text_input('City', value=loc.get('city', ''))
         region = st.sidebar.text_input('Region/State', value=loc.get('region', ''))
