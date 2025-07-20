@@ -868,7 +868,7 @@ def sidebar_navigation():
     # --- Geolocation display and override ---
     st.sidebar.markdown('---')
     # Try browser geolocation first
-    geo = streamlit_geolocation.geolocation()
+    geo = streamlit_geolocation.streamlit_geolocation()
     if geo and geo.get('latitude') and geo.get('longitude'):
         loc = {
             'latitude': geo['latitude'],
