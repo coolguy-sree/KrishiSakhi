@@ -987,7 +987,12 @@ def agri_chat_page():
         if image_path and os.path.exists(image_path):
             new_image = genai.upload_file(image_path)
             files.append(new_image)
-        chat_session = model.start_chat(history=user_history)
+        # Only keep allowed keys: 'role' and 'parts'
+        filtered_history = [
+            {k: v for k, v in entry.items() if k in ("role", "parts")}
+            for entry in user_history
+        ]
+        chat_session = model.start_chat(history=filtered_history)
         response = chat_session.send_message(content=[user_message, new_image] if new_image else user_message)
         bot_reply = response.text
         # Update history
@@ -1124,7 +1129,12 @@ Let me know if you need organic alternatives! """
                 files.append(new_image)
 
             # Start chat session with history
-            chat_session = model.start_chat(history=user_history)
+            # Only keep allowed keys: 'role' and 'parts'
+            filtered_history = [
+                {k: v for k, v in entry.items() if k in ("role", "parts")}
+                for entry in user_history
+            ]
+            chat_session = model.start_chat(history=filtered_history)
             response = chat_session.send_message(content=[user_message, new_image] if new_image else user_message)
             bot_reply = response.text
 
@@ -1177,7 +1187,7 @@ def recommendations_page(farmer_advisor, market_researcher, weather_module, agri
         ("Potato", "🥔 Potato: Cool-season tuber, rich in carbohydrates."),
         ("Tomato", "🍅 Tomato: Popular vegetable, needs warm weather, prone to diseases."),
         ("Onion", "🧅 Onion: Bulb vegetable, grows in many climates."),
-        ("Chickpea", "🌱 Chickpea: Protein-rich pulse, good for dry areas."),
+        ("Chickpea", "�� Chickpea: Protein-rich pulse, good for dry areas."),
         ("Mustard", "🌻 Mustard: Oilseed, cool-season crop, used for oil and greens."),
         ("Sorghum", "🌾 Sorghum: Drought-tolerant cereal, used for food and fodder."),
         ("Banana", "🍌 Banana: Tropical fruit, needs rich soil and moisture."),
