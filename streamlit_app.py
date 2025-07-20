@@ -33,6 +33,7 @@ import csv
 import getpass
 import getpass
 from datetime import datetime
+import streamlit_geolocation
 
 USER_INPUT_LOG = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'user_input_log.csv')
 
@@ -865,10 +866,23 @@ def sidebar_navigation():
     selected_lang = st.sidebar.selectbox(t('select_language', lang), lang_names, index=lang_keys.index(lang))
     st.session_state['lang'] = {v: k for k, v in lang_display.items()}[selected_lang]
     # --- Geolocation display and override ---
-    loc = get_geolocation()
     st.sidebar.markdown('---')
-    st.sidebar.write('**Detected Location:**')
-    st.sidebar.write(f"{loc.get('city', '')}, {loc.get('region', '')}, {loc.get('country', '')}")
+    # Try browser geolocation first
+    geo = streamlit_geolocation.get_geolocation()
+    if geo and geo.get('latitude') and geo.get('longitude'):
+        loc = {
+            'latitude': geo['latitude'],
+            'longitude': geo['longitude'],
+            'city': '',
+            'region': '',
+            'country': ''
+        }
+        st.sidebar.write('**Detected Location (Browser):**')
+        st.sidebar.write(f"Lat: {geo['latitude']}, Lon: {geo['longitude']}")
+    else:
+        loc = get_geolocation()
+        st.sidebar.write('**Detected Location (IP):**')
+        st.sidebar.write(f"{loc.get('city', '')}, {loc.get('region', '')}, {loc.get('country', '')}")
     if st.sidebar.checkbox('Override location'):
         city = st.sidebar.text_input('City', value=loc.get('city', ''))
         region = st.sidebar.text_input('Region/State', value=loc.get('region', ''))
@@ -1128,8 +1142,7 @@ Let me know if you need organic alternatives! """
                 new_image = genai.upload_file(image_path)
                 files.append(new_image)
 
-            # Start chat session with history
-            # Only keep allowed keys: 'role' and 'parts'
+            # Start chat session with history (filter out non-standard fields)
             filtered_history = [
                 {k: v for k, v in entry.items() if k in ("role", "parts")}
                 for entry in user_history
