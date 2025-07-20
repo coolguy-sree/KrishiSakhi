@@ -25,3 +25,4 @@ streamlit-folium
 matplotlib
 google-generativeai
 werkzeug
+streamlit-geolocation
