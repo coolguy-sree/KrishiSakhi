@@ -19,7 +19,7 @@
 **Assist • Diagnose • Recommend • Connect**
 
 <p>
-  <img src="https://img.shields.io/badge/🌟_Live_Demo-4CAF50?style=for-the-badge&logo=streamlit" alt="https://krishisakhi-5ajrz9rgokwccjj3agksgz.streamlit.app/">
+  <a href="https://krishisakhi-5ajrz9rgokwccjj3agksgz.streamlit.app/"> <img src="https://img.shields.io/badge/🌟_Live_Demo-4CAF50?style=for-the-badge&logo=streamlit" alt="https://krishisakhi-5ajrz9rgokwccjj3agksgz.streamlit.app/">
   <img src="https://img.shields.io/badge/🤖_AI-Powered-2196F3?style=for-the-badge&logo=tensorflow" alt="AI Powered">
   <img src="https://img.shields.io/badge/🌐_Multilingual-Support-FF5722?style=for-the-badge&logo=google" alt="Multilingual">
   <img src="https://img.shields.io/badge/📊_Analytics-Integrated-9C27B0?style=for-the-badge&logo=chart" alt="Analytics">
@@ -337,7 +337,7 @@ git push origin feature/awesome-feature
 ### 🚀 **Ready to Grow with KrishiSakhi?**
 
 <p>
-  <a href="#-quick-start">
+  <a href="https://krishisakhi-5ajrz9rgokwccjj3agksgz.streamlit.app/">
     <img src="https://img.shields.io/badge/🚀_Get_Started-Run_App-4CAF50?style=for-the-badge&logo=streamlit" alt="https://krishisakhi-5ajrz9rgokwccjj3agksgz.streamlit.app/">
   </a>
 </p>
