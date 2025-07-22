@@ -42,7 +42,7 @@
 <div align="center">
 
 | 🌐 **Live Demo** | 📖 **Documentation** |
-| [**Try KrishiSakhi**](https://krishisakhi-5ajrz9rgokwccjj3agksgz.streamlit.app/) | [**User Guide**](https://docs.google.com/document/d/e/2PACX-1vRHZOSyi_Kdlcyjs_VUGhAfdmY1KBxswyqDDNGTclLejIaBahUrH0oBZBK0nJ5lBPykclZ0Tl66_owQ/pub) |
+| [**Try KrishiSakhi**](https://krishisakhi-5ajrz9rgokwccjj3agksgz.streamlit.app/) | [**User Guide**](https://docs.google.com/document/d/e/2PACX-1vRHZOSyi_Kdlcyjs_VUGhAfdmY1KBxswyqDDNGTclLejIaBahUrH0oBZBK0nJ5lBPykclZ0Tl66_owQ/pub)|
 
 </div>
 
