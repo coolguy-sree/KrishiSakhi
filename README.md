@@ -41,9 +41,9 @@
 
 <div align="center">
 
-| 🌐 **Live Demo** | 📖 **Documentation** | 💬 **Community** |
+| 🌐 **Live Demo** | 📖 **Documentation** |
 |:---:|:---:|:---:|
-| [**Try KrishiSakhi**](https://krishisakhi-5ajrz9rgokwccjj3agksgz.streamlit.app/) | [**User Guide**](./docs/USER_GUIDE.md) | *Join our community* |
+| [**Try KrishiSakhi**](https://krishisakhi-5ajrz9rgokwccjj3agksgz.streamlit.app/) | [**User Guide**](https://docs.google.com/document/d/e/2PACX-1vRHZOSyi_Kdlcyjs_VUGhAfdmY1KBxswyqDDNGTclLejIaBahUrH0oBZBK0nJ5lBPykclZ0Tl66_owQ/pub) |
 
 </div>
 
