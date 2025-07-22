@@ -19,7 +19,7 @@
 **Assist • Diagnose • Recommend • Connect**
 
 <p>
-  <img src="https://img.shields.io/badge/🌟_Live_Demo-4CAF50?style=for-the-badge&logo=streamlit" alt="Live Demo">
+  <img src="https://img.shields.io/badge/🌟_Live_Demo-4CAF50?style=for-the-badge&logo=streamlit" alt="https://krishisakhi-5ajrz9rgokwccjj3agksgz.streamlit.app/">
   <img src="https://img.shields.io/badge/🤖_AI-Powered-2196F3?style=for-the-badge&logo=tensorflow" alt="AI Powered">
   <img src="https://img.shields.io/badge/🌐_Multilingual-Support-FF5722?style=for-the-badge&logo=google" alt="Multilingual">
   <img src="https://img.shields.io/badge/📊_Analytics-Integrated-9C27B0?style=for-the-badge&logo=chart" alt="Analytics">
@@ -42,7 +42,6 @@
 <div align="center">
 
 | 🌐 **Live Demo** | 📖 **Documentation** |
-|:---:|:---:|:---:|
 | [**Try KrishiSakhi**](https://krishisakhi-5ajrz9rgokwccjj3agksgz.streamlit.app/) | [**User Guide**](https://docs.google.com/document/d/e/2PACX-1vRHZOSyi_Kdlcyjs_VUGhAfdmY1KBxswyqDDNGTclLejIaBahUrH0oBZBK0nJ5lBPykclZ0Tl66_owQ/pub) |
 
 </div>
@@ -298,21 +297,6 @@ git push origin feature/awesome-feature
 
 <div align="center">
 
-### 🌟 **Connect with KrishiSakhi**
-
-<p>
-  <a href="https://discord.gg/krishisakhi">
-    <img src="https://img.shields.io/badge/Discord-Join_Our_Community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
-  </a>
-  <a href="https://twitter.com/krishisakhi">
-    <img src="https://img.shields.io/badge/Twitter-Follow_Updates-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
-  </a>
-  <a href="https://github.com/your-username/krishisakhi">
-    <img src="https://img.shields.io/badge/GitHub-Star_Project-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-  </a>
-</p>
-
-
 ## 📄 **License & Legal**
 
 <div align="center">
@@ -354,7 +338,7 @@ git push origin feature/awesome-feature
 
 <p>
   <a href="#-quick-start">
-    <img src="https://img.shields.io/badge/🚀_Get_Started-Run_App-4CAF50?style=for-the-badge&logo=streamlit" alt="Get Started">
+    <img src="https://img.shields.io/badge/🚀_Get_Started-Run_App-4CAF50?style=for-the-badge&logo=streamlit" alt="https://krishisakhi-5ajrz9rgokwccjj3agksgz.streamlit.app/">
   </a>
 </p>
 
